@@ -1,3 +1,6 @@
+import timeit
+
+
 #fungsi dibawah berfungsi untuk membadingkan isi arraynya satu sama lain
 def findCommon(temp1, temp2): 
   
@@ -20,7 +23,7 @@ def findCommon(temp1, temp2):
 def AwalanUmum(arr, low, high): 
     #high adalah sinilai akhir dari array.
     #low adalah nilai awal dari array.
-    if low == high: #if conditional jika nilai dari awal akhir sama dengan nilai akhir dari array
+    if low == high: #if conditional jika nilai dari awal array sama dengan nilai akhir dari array
         return arr[low] # maka akan direturn nilai array awal.
   
     if high > low: #if conditional jika nilai akhir array lebih gede nilainya dari nilai awalnya.
@@ -30,16 +33,19 @@ def AwalanUmum(arr, low, high):
         temp1 = AwalanUmum(arr, low, mid) #temp1 variabel untuk menyimpan dmn konsepnya divide and conquer dari awal sampai tengah array.
     
         temp2 = AwalanUmum(arr, mid + 1, high) 
-        print("hasil",temp2) #temp2 variabel untuk menyimpan dan konsepnya divide and conquere dari tengah+1 sampai dengan akhir array.
+         #temp2 variabel untuk menyimpan dan konsepnya divide and conquere dari tengah+1 sampai dengan akhir array.
   
         return findCommon(temp1, temp2) #memanggil fungsi findCommon untuk membandingan temp1 dan temp2 apakah ada kesamaan huruf / kata.
 
 
-arr = ["asdasd", "test" , "se23", "westtt", "ss", "dasd"]
+starttime = timeit.default_timer()
+print(starttime)
+arr = ["manasdasd", "mantest", "manse23", "manwesttt", "manss", "mandasd", "manaedes", "mansecre", "manbulletin", "manscudet", "manauto", "manual", "manades", "manfractual", "manterm", "mandesert", "manrush", "manbomb", "manolotov", "manjosh", "manpolish", "manantum", "manruk", "mankoja", "manaada", "manjoki", "manaplle", "mantafu", "mankofari", "manahbek", "mandaliu", "manjaad", "manjadawa", "mangulai", "manbaru", "mankiro", "manadawa", "manjenggot", "manjudi", "mankufqo", "manxerito", "manbuluk", "manqeri", "manvulan", "mankilo", "mandota", "mantan", "mangundul", "manbotak", "manrontok", "manpedang", "manwaktu", "manroko", "manvoli", "manbola", "mantennis", "manmabuk", "manmerci", "manlambo", "manforza", "manpursuit", "manlupa", "maningat", "manteuing", "manbuta", "mansurend", "mangelo", "mantugas", "manfullus", "mankisut", "mankeriput", "mantua", "manceli"]
 array = len(arr)
 jawab = AwalanUmum(arr, 0, array - 1) 
-  
+endtime = timeit.default_timer()
+
 if len(jawab): 
-    print("Awalan yang paling panjang adalah", jawab)
+    print("Awalan yang paling panjang adalah", jawab ,"dan waktu" , endtime - starttime)
 else:
     print("Tidak ada kata yang cocok") 

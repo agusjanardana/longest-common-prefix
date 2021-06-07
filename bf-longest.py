@@ -24,6 +24,7 @@ def lcp(arr):
 starttime = timeit.default_timer()
 print("The start time is :",starttime)
 arr = ["manasdasd", "mantest", "manse23", "manwesttt", "manss", "mandasd", "manaedes", "mansecre", "manbulletin", "manscudet", "manauto", "manual", "manades", "manfractual", "manterm", "mandesert", "manrush", "manbomb", "manolotov", "manjosh", "manpolish", "manantum", "manruk", "mankoja", "manaada", "manjoki", "manaplle", "mantafu", "mankofari", "manahbek", "mandaliu", "manjaad", "manjadawa", "mangulai", "manbaru", "mankiro", "manadawa", "manjenggot", "manjudi", "mankufqo", "manxerito", "manbuluk", "manqeri", "manvulan", "mankilo", "mandota", "mantan", "mangundul", "manbotak", "manrontok", "manpedang", "manwaktu", "manroko", "manvoli", "manbola", "mantennis", "manmabuk", "manmerci", "manlambo", "manforza", "manpursuit", "manlupa", "maningat", "manteuing", "manbuta", "mansurend", "mangelo", "mantugas", "manfullus", "mankisut", "mankeriput", "mantua", "manceli"]
+
 final_answer = lcp(arr)
 print("\nHasil  eksekusi dari program ini adalah", final_answer , "dan waktunya" , timeit.default_timer() - starttime)
 

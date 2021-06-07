@@ -3,7 +3,6 @@ import timeit
 
 #fungsi dibawah berfungsi untuk membadingkan isi arraynya satu sama lain
 def findCommon(temp1, temp2): 
-  
     result = "" #inisialisasi result awal kosong
     x, y = len(temp1), len(temp2) #masukkan panjang temp1 dan temp2 ke variabel x dan y 
     # print("hasil2 : ", temp2)
@@ -40,7 +39,8 @@ def AwalanUmum(arr, low, high):
 
 starttime = timeit.default_timer()
 print(starttime)
-arr = ["manasdasd", "mantest", "manse23", "manwesttt", "manss", "mandasd", "manaedes", "mansecre", "manbulletin", "manscudet", "manauto", "manual", "manades", "manfractual", "manterm", "mandesert", "manrush", "manbomb", "manolotov", "manjosh", "manpolish", "manantum", "manruk", "mankoja", "manaada", "manjoki", "manaplle", "mantafu", "mankofari", "manahbek", "mandaliu", "manjaad", "manjadawa", "mangulai", "manbaru", "mankiro", "manadawa", "manjenggot", "manjudi", "mankufqo", "manxerito", "manbuluk", "manqeri", "manvulan", "mankilo", "mandota", "mantan", "mangundul", "manbotak", "manrontok", "manpedang", "manwaktu", "manroko", "manvoli", "manbola", "mantennis", "manmabuk", "manmerci", "manlambo", "manforza", "manpursuit", "manlupa", "maningat", "manteuing", "manbuta", "mansurend", "mangelo", "mantugas", "manfullus", "mankisut", "mankeriput", "mantua", "manceli"]
+# arr = ["manasdasd", "mantest", "manse23", "manwesttt", "manss", "mandasd", "manaedes", "mansecre", "manbulletin", "manscudet", "manauto", "manual", "manades", "manfractual", "manterm", "mandesert", "manrush", "manbomb", "manolotov", "manjosh", "manpolish", "manantum", "manruk", "mankoja", "manaada", "manjoki", "manaplle", "mantafu", "mankofari", "manahbek", "mandaliu", "manjaad", "manjadawa", "mangulai", "manbaru", "mankiro", "manadawa", "manjenggot", "manjudi", "mankufqo", "manxerito", "manbuluk", "manqeri", "manvulan", "mankilo", "mandota", "mantan", "mangundul", "manbotak", "manrontok", "manpedang", "manwaktu", "manroko", "manvoli", "manbola", "mantennis", "manmabuk", "manmerci", "manlambo", "manforza", "manpursuit", "manlupa", "maningat", "manteuing", "manbuta", "mansurend", "mangelo", "mantugas", "manfullus", "mankisut", "mankeriput", "mantua", "manceli"]
+arr = ["geeksforgeeks", "geeks", "geek", "geezer"] 
 array = len(arr)
 jawab = AwalanUmum(arr, 0, array - 1) 
 endtime = timeit.default_timer()
